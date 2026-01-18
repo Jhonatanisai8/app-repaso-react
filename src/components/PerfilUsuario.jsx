@@ -4,6 +4,10 @@ import "../styles/PerfilUsuario.css"
 const nombre = "Dev Jhona"
 const experiencia = 2
 const tecnologias = ["Java", "Spring", "React"];
+const datosPersonales = {
+    telefono: "123312456",
+    ciudad: "Test Ciudad"
+}
 const PerfilUsuario = () => {
     return (
         <div>
@@ -14,6 +18,12 @@ const PerfilUsuario = () => {
                 {tecnologias.map((tech) => (
                     <li key={tech}>{tech}</li>
                 ))}
+            </ul>
+            <br />
+            <h2>Datos Personales</h2>
+            <ul>
+                <li>{datosPersonales.telefono}</li>
+                <li>{datosPersonales.ciudad}</li>
             </ul>
         </div>
     )
