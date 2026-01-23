@@ -1,5 +1,6 @@
 import PerfilUsuario from './components/PerfilUsuario'
 import TarjetaEmpleado from './components/props/TarjetaEmpleado'
+import TarjetaEmpleado1 from './components/props/TarjetaEmpleado1'
 // import Saludo from './components/Saludo'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     // <Saludo nombre="Jhonatan"></Saludo>
     // <PerfilUsuario></PerfilUsuario>
     <div>
-      <TarjetaEmpleado
+      {/* <TarjetaEmpleado
         nombre="Jhonatan"
         puesto="Java Developer"
       ></TarjetaEmpleado>
@@ -15,7 +16,16 @@ function App() {
       <TarjetaEmpleado
         nombre="Ana"
         puesto="Java Developer"
-      ></TarjetaEmpleado>
+      ></TarjetaEmpleado> */}
+      <TarjetaEmpleado1
+        nombre={"Eli"}
+        puesto={"Dev Pyton"}
+      >
+      </TarjetaEmpleado1>
+      <TarjetaEmpleado1
+        nombre={"Eli"}
+      >
+      </TarjetaEmpleado1>
     </div>
   )
 }
