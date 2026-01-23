@@ -1,3 +1,4 @@
+import ContadorApp from './components/events/ContadorApp'
 import MiBoton from './components/events/MiBoton'
 import PerfilUsuario from './components/PerfilUsuario'
 import TarjetaEmpleado from './components/props/TarjetaEmpleado'
@@ -27,7 +28,11 @@ function App() {
         nombre={"Eli"}
       >
       </TarjetaEmpleado1> */}
-      <MiBoton></MiBoton>
+      {/* <MiBoton></MiBoton> */}
+      <ContadorApp
+        valor={0}
+      >
+      </ContadorApp>
     </div>
   )
 }
