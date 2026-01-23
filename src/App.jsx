@@ -1,3 +1,4 @@
+import MiBoton from './components/events/MiBoton'
 import PerfilUsuario from './components/PerfilUsuario'
 import TarjetaEmpleado from './components/props/TarjetaEmpleado'
 import TarjetaEmpleado1 from './components/props/TarjetaEmpleado1'
@@ -17,7 +18,7 @@ function App() {
         nombre="Ana"
         puesto="Java Developer"
       ></TarjetaEmpleado> */}
-      <TarjetaEmpleado1
+      {/* <TarjetaEmpleado1
         nombre={"Eli"}
         puesto={"Dev Pyton"}
       >
@@ -25,7 +26,8 @@ function App() {
       <TarjetaEmpleado1
         nombre={"Eli"}
       >
-      </TarjetaEmpleado1>
+      </TarjetaEmpleado1> */}
+      <MiBoton></MiBoton>
     </div>
   )
 }
