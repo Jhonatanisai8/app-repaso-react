@@ -1,5 +1,5 @@
 import React from 'react'
-import "../styles/PerfilUsuario.css"
+// import "../styles/PerfilUsuario.css"
 
 const nombre = "Dev Jhona"
 const experiencia = 2
