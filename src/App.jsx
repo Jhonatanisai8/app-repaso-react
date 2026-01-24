@@ -1,8 +1,9 @@
-import ContadorApp from './components/events/ContadorApp'
+// import ContadorApp from './components/events/ContadorApp'
 import MiBoton from './components/events/MiBoton'
 import PerfilUsuario from './components/PerfilUsuario'
 import TarjetaEmpleado from './components/props/TarjetaEmpleado'
 import TarjetaEmpleado1 from './components/props/TarjetaEmpleado1'
+import Contador from './components/useEstate/Contador'
 // import Saludo from './components/Saludo'
 
 function App() {
@@ -29,10 +30,13 @@ function App() {
       >
       </TarjetaEmpleado1> */}
       {/* <MiBoton></MiBoton> */}
-      <ContadorApp
+      {/* <ContadorApp
         valor={0}
       >
-      </ContadorApp>
+      </ContadorApp> */}
+      <Contador valor={5}>
+        Soy un Boton
+      </Contador>
     </div>
   )
 }
