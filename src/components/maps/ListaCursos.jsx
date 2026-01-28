@@ -1,5 +1,13 @@
 import React from 'react'
 
+const Item = ({nombre, lenguaje}) => {
+  return (
+    <li>
+      {nombre} - <strong>{lenguaje}</strong>
+    </li>
+  )
+}
+
 const ListaCursos = () => {
   const cursos = [
     { id: 1, nombre: "Java Developer", lenguaje: "Java" },
@@ -11,12 +19,12 @@ const ListaCursos = () => {
       <ul>
         {
           cursos.map((curso) => (
-            <li key={curso.id}>
-              {curso.nombre} - <strong>{curso.lenguaje}</strong>
-            </li>
+            <Item key={curso.id} nombre={curso.nombre} lenguaje={curso.lenguaje}></Item>
           ))
         }
       </ul>
+
+
     </div>
   )
 }
