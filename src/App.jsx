@@ -1,6 +1,7 @@
 // import ContadorApp from './components/events/ContadorApp'
 import BotonAcceso from './components/condiciones/BotonAcceso'
 import MiBoton from './components/events/MiBoton'
+import ListaCursos from './components/maps/ListaCursos'
 import PerfilUsuario from './components/PerfilUsuario'
 import TarjetaEmpleado from './components/props/TarjetaEmpleado'
 import TarjetaEmpleado1 from './components/props/TarjetaEmpleado1'
@@ -38,7 +39,7 @@ function App() {
       {/* <Contador valor={5}>
         Soy un Boton
       </Contador> */}
-
+      {/* 
       <BotonAcceso
         estaLogueado={true}>
       </BotonAcceso>
@@ -47,7 +48,8 @@ function App() {
       </BotonAcceso>
       <BotonAcceso
         estaLogueado={true}>
-      </BotonAcceso>
+      </BotonAcceso> */}
+      <ListaCursos></ListaCursos>
     </div>
   )
 }
