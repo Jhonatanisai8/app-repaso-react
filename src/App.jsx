@@ -6,6 +6,7 @@ import PerfilUsuario from './components/PerfilUsuario'
 import TarjetaEmpleado from './components/props/TarjetaEmpleado'
 import TarjetaEmpleado1 from './components/props/TarjetaEmpleado1'
 import Contador from './components/useEstate/Contador'
+import ListadoEmpleado from "./components/maps/ListadoEmpleado.jsx";
 // import Saludo from './components/Saludo'
 
 function App() {
@@ -49,7 +50,11 @@ function App() {
       <BotonAcceso
         estaLogueado={true}>
       </BotonAcceso> */}
-      <ListaCursos></ListaCursos>
+
+      {/*
+      <ListaCursos></ListaCursos>*/}
+      <ListadoEmpleado></ListadoEmpleado>
+
     </div>
   )
 }
