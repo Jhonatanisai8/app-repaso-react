@@ -12,6 +12,7 @@ const FormEmpleado = ({agregarEmpleado}) => {
     }
     event.preventDefault();
     agregarEmpleado(empleados => [...empleados, enviarEmpleado])
+    setInputValue("")
   }
   return (
     <form onSubmit={enviarDataEmpleado}>
