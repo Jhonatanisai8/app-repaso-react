@@ -15,9 +15,24 @@ const ListadoEmpleado = () => {
     {id: 5, nombre: "Walter Daniel", apellido: "Elias Florez"}
   ]
   const [arregloEmpleados, setArregloEmpleados] = useState(listadoEmpleados)
+
+  const onAgregarTarea = (valor) => {
+    if (valor === "") {
+      alert("El valor no debe ser vacio");
+      return
+    }
+    const envio = {
+      id: listadoEmpleados.length,
+      nombre: valor,
+      apellido: "Peru"
+    }
+    setArregloEmpleados([...arregloEmpleados, envio]);
+    console.log(valor)
+  }
+
   return (
     <div>
-      <FormEmpleado agregarEmpleado={setArregloEmpleados}></FormEmpleado>
+      <FormEmpleado agregarEmpleado={onAgregarTarea}></FormEmpleado>
       <h1>Lista de Empleados</h1>
       <ol>
         {arregloEmpleados.map((empleado) => (

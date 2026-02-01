@@ -1,19 +1,19 @@
 import React, {useState} from "react";
 
 const FormEmpleado = ({agregarEmpleado}) => {
-  const [inputValue, setInputValue] = useState('');
+
+  const [inputValue, setInputValue] = useState('')
+
   const manejarNombreEmpleado = (event) => {
     setInputValue(event.target.value);
   }
+
   const enviarDataEmpleado = (event) => {
-    const enviarEmpleado = {
-      nombre: inputValue,
-      apellido: "Test de Apellido"
-    }
-    event.preventDefault();
-    agregarEmpleado(empleados => [...empleados, enviarEmpleado])
+    event.preventDefault()
+    agregarEmpleado(inputValue)
     setInputValue("")
   }
+
   return (
     <form onSubmit={enviarDataEmpleado}>
       <input type="text"
