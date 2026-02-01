@@ -7,6 +7,8 @@ import TarjetaEmpleado from './components/props/TarjetaEmpleado'
 import TarjetaEmpleado1 from './components/props/TarjetaEmpleado1'
 import Contador from './components/useEstate/Contador'
 import ListadoEmpleado from "./components/maps/ListadoEmpleado.jsx";
+import UsersApp from "./components/useEffect/UsersApp.jsx";
+
 // import Saludo from './components/Saludo'
 
 function App() {
@@ -53,9 +55,14 @@ function App() {
 
       {/*
       <ListaCursos></ListaCursos>*/}
-      <ListadoEmpleado></ListadoEmpleado>
 
+      {/*
+      <ListadoEmpleado></ListadoEmpleado>
+      */}
+
+      <UsersApp/>
     </div>
+
   )
 }
 
